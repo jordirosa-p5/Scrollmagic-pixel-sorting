@@ -1,0 +1,124 @@
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    scrollbar-width: none;
+    /*Firefox - ocultar barra scroll */
+    -ms-overflow-style: none;
+    /* IE 10+ - ocultar barra scroll */
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /*Chrome o Safari  - ocultar barra scroll */
+}
+
+canvas {
+    display: block;
+}
+
+.supercontenidor {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+
+.contenidor {
+    position: absolute;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    overflow: hidden;
+}
+
+.contenidor p {
+    padding: 30px;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+#primerAdalt {
+    position: fixed;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    height: 15%;
+    font-size: 24px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+
+#primerAdalt p {
+    position: absolute;
+    left: 130px;
+    text-align: center;
+    top: 0px;
+}
+
+#primerAdalt p span {
+    position: relative;
+    display: inline-block;
+    white-space: pre;
+}
+
+
+#primerAdalt img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: scale(0.5) translate(-100%, -100%);
+    transform: scale(0.5) translate(-100%, -100%);
+}
+
+#primer {
+    /*background-color: antiquewhite;*/
+    /*https://webgradients.com/*/
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+#segon {
+    background-color: aquamarine;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+#segon.apareix {
+    opacity: 1;
+}
+
+#segon img {
+    left: 10%;
+}
+
+#tercer {
+    /*background-color: dodgerblue;*/
+    /*https://webgradients.com/*/
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+#quart {
+    background-color: dodgerblue;
+}
+
+#sise {
+}
